@@ -5,11 +5,11 @@ metadata:
   namespace: jeremy
 spec:
   interval: 30s
-  configurationSource: cook-app-three-config-source-stg
+  configurationSource: cook-config-source-stg
   content:
     - cook-app-three/ocho
     - cook-app-three/save-the-world
     - cook-app-three/monitoring
     - cook-app-three/security
     - cook-app-three/logging
-    - cook-app-three/kafka-stream-binder
+    - cook-app-three/azure

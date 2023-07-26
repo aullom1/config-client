@@ -21,6 +21,10 @@ class MessageRestController {
 
 	@Value("${name:Name default}")
 	private String name;
+	@Value("${ocho:Ocho default}")
+	private String ocho;
+	@Value("${world:World default}")
+	private String world;
 	@Value("${azure:Azure default}")
 	private String azure;
 	@Value("${logging:Logging default}")
@@ -33,6 +37,8 @@ class MessageRestController {
 	String getAll() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("name: " + this.name + "<br />");
+		sb.append("ocho: " + this.ocho + "<br />");
+		sb.append("world: " + this.world + "<br />");
 		sb.append("azure: " + this.azure + "<br />");
 		sb.append("logging: " + this.logging + "<br />");
 		sb.append("monitoring: " + this.monitoring + "<br />");

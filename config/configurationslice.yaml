@@ -5,7 +5,7 @@ metadata:
   namespace: jeremy
 spec:
   interval: 30s
-  configurationSource: cook-config-source-stg
+  configurationSource: cook-config-source
   content:
     - cook-app-three/ocho
     - cook-app-three/save-the-world

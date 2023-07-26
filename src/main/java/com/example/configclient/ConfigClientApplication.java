@@ -21,16 +21,16 @@ class MessageRestController {
 
 	@Value("${name:Name default}")
 	private String name;
-	@Value("${ocho:Ocho default}")
-	private String ocho;
-	@Value("${world:World default}")
-	private String world;
 	@Value("${azure:Azure default}")
 	private String azure;
 	@Value("${logging:Logging default}")
 	private String logging;
 	@Value("${monitoring:Monitoring default}")
 	private String monitoring;
+	@Value("${rabbitmq:Rabbitmq default}")
+	private String rabbit;
+	@Value("${ocho:Ocho default}")
+	private String ocho;
 
 
 	@RequestMapping("/all")
@@ -38,10 +38,10 @@ class MessageRestController {
 		StringBuilder sb = new StringBuilder();
 		sb.append("name: " + this.name + "<br />");
 		sb.append("ocho: " + this.ocho + "<br />");
-		sb.append("world: " + this.world + "<br />");
 		sb.append("azure: " + this.azure + "<br />");
 		sb.append("logging: " + this.logging + "<br />");
 		sb.append("monitoring: " + this.monitoring + "<br />");
+		sb.append("rabbit: " + this.rabbit + "<br />");
 		return sb.toString();
 	}
 }

@@ -1,7 +1,7 @@
 apiVersion: config.apps.tanzu.vmware.com/v1alpha4
 kind: ConfigurationSource
 metadata:
-  name: cook-config-source-prod
+  name: cook-config-source
   namespace: jeremy
 spec:
   backends:
